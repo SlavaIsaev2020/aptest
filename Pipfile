@@ -13,6 +13,8 @@ virtualenv = "==15.2.0"
 virtualenv-clone = "==0.3.0"
 Django = "==2.0.4"
 Markdown = "==2.6.11"
+gunicorn = "*"
+django-heroku = "*"
 
 [dev-packages]
 
