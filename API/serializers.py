@@ -8,6 +8,7 @@ class CourseSerializer(serializers.ModelSerializer):
         fields = ('url', 'id', 'name')
 
 class StudentSerializer(serializers.ModelSerializer):
+    courses = CourseSerializer(many=True)
     class Meta:
         model = Student
         fields = ('name', 'courses', 'id','url')
